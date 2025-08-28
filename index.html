@@ -46,14 +46,14 @@
               style="background-color: rgba(65, 255, 220, 0.25)"
               ;
             >
-              100 <i class="fa-solid fa-star"></i>
+              <span id="star-count">100</span> <i class="fa-solid fa-star"></i>
             </p>
             <p
               class="w-[69px] h-[32px] p-5 rounded-xl text-white flex justify-center items-center gap-2"
               style="background-color: #00a63e"
               ;
             >
-              2 <span>copy</span>
+              <span>2</span> Copy
             </p>
           </div>
         </div>
@@ -315,13 +315,16 @@
               <p><i class="fa-regular fa-clock"></i> Call History</p>
             </div>
             <div>
-              <button class="bg-green-500 text-white rounded-lg w-15">
+              <button
+                class="bg-green-500 text-white rounded-lg w-15"
+                id="clear-history"
+              >
                 Clear
               </button>
             </div>
           </div>
           <div class="history-card h-screen bg-white">
-            <div id="historyList"></div>
+            <div id="history-list"></div>
           </div>
         </div>
       </div>
